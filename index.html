@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            border: 1px solid red;
+        }
+        
+        #player1,
+        #player2 {
+            display: inline-block;
+        }
+        
+        .winner {
+            background-color: lightgreen;
+        }
+        
+        .loser {
+            background-color: white;
+        }
+    </style>
+    <title> Document</title>
+</head>
+
+<body>
+
+    <div>
+        <div id="player1">
+            You
+            <div id="player1Count"></div>
+        </div>
+        <div id="player2">
+            Computer
+            <div id="player2Count"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <button onclick="playTurn()" id="playTurnButton">Play Turn</button>
+        <img id="player1Card">
+        <img id="player2Card">
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
